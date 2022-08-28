@@ -19,6 +19,8 @@ jobs:
       with:
         repository: ConnectCR/ConnectCR-dev
         ref: master
+        ssh-key: ${{ secrets.SSH_KEY }}
+
         
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
